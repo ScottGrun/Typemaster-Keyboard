@@ -91,7 +91,7 @@ Moving forward I would like to improve the accessibility of the website, the des
 
 ### Useful resources
 
--   [Animate on Scroll Library](https://michalsnik.github.io/aos/) - I found this library that was exactly what I was looking for to easily integrate various animations into this project with little overhead.
+-   [Animate on Scroll Library](https://michalsnik.github.io/aos/) - I found this library was exactly what I was looking for to easily integrate various animations into this project with little overhead.
 
 ## Acknowledgments
 
