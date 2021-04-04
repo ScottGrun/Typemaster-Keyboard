@@ -18,3 +18,11 @@ header {
 		padding: 24px 40px;
 	}
 }
+
+@media (min-width: 1080px) {
+	nav {
+		max-width: 1114px;
+		width: 1114px;
+		margin: 0 auto;
+	}
+}
