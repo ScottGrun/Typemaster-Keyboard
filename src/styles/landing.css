@@ -1,0 +1,94 @@
+.landing-grid {
+	/* overflow: hidden; */
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 0fr 0fr;
+	gap: 24px 24px;
+	margin: 0 24px;
+	grid-template-areas:
+		"landing-page-content landing-page-content landing-page-content landing-page-content"
+		"landing-img-container landing-img-container landing-img-container landing-img-container";
+}
+
+.landing-page-content {
+	grid-area: landing-page-content;
+	position: relative;
+}
+
+.landing-img-container {
+	grid-area: landing-img-container;
+}
+
+.cta-text {
+	margin: 32px 0;
+}
+
+.btn-container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.landing-img-container {
+	position: relative;
+	width: 100%;
+}
+
+.landing-img {
+	border-radius: 20px 0 0 20px;
+	width: 100vw;
+	object-fit: contain;
+}
+
+/* Breakpoints */
+
+/* Tablet */
+@media (min-width: 768px) {
+	.landing-grid {
+		align-items: center;
+		grid-template-columns: repeat(12, 48px);
+		grid-template-rows: 1fr;
+		margin: 0 40px;
+		grid-template-areas: "landing-page-content landing-page-content landing-page-content landing-page-content landing-page-content landing-page-content . landing-img-container landing-img-container landing-img-container landing-img-container ";
+		gap: 10px;
+	}
+
+	.landing-img-container {
+		grid-area: landing-img-container;
+	}
+	.landing-img {
+		width: auto;
+		height: 425px;
+	}
+}
+
+/* Desktop */
+@media (min-width: 1080px) {
+	.landing-grid {
+		align-items: center;
+		grid-template-columns: repeat(12, 65px);
+		margin: 0;
+		grid-template-areas: "landing-page-content landing-page-content landing-page-content landing-page-content landing-page-content . landing-img-container landing-img-container landing-img-container landing-img-container landing-img-container landing-img-container";
+		gap: 30px;
+	}
+
+	#wrapper {
+		border: solid;
+	}
+	.landing-img {
+		width: auto;
+		height: 480px;
+		border-radius: 20px;
+	}
+
+	.btn-container {
+		justify-content: flex-start;
+	}
+	.btn-container > button {
+		margin-right: 20px;
+	}
+
+	.landing-img-container {
+		overflow: visible;
+		position: relative;
+	}
+}

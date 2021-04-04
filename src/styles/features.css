@@ -1,0 +1,88 @@
+.feature-page {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin: 0 24px;
+}
+
+.keyboard-feature {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	text-align: center;
+	margin-top: 64px;
+}
+
+.icon-container {
+	width: 65px;
+	height: 65px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--orange-1);
+	border-radius: 16px;
+}
+
+.icon-container > img {
+	width: auto;
+}
+
+.keyboard-feature > h3 {
+	width: 100%;
+	display: block;
+	margin-top: 48px;
+}
+
+.keyboard-feature > p {
+	margin-top: 24px;
+}
+
+/* Breakpoints */
+
+/* Tablet */
+@media (min-width: 768px) {
+	.feature-page {
+		margin: 0 40px;
+		justify-content: space-between;
+	}
+
+	.keyboard-feature {
+		max-width: 289px;
+		text-align: left;
+		justify-content: flex-start;
+	}
+
+	.keyboard-feature > h3 {
+		margin-top: 40px;
+		padding-right: 7rem;
+	}
+}
+
+/* Desktop */
+@media (min-width: 1080px) {
+	.feature-page {
+		margin: 0;
+		margin-top: 168px;
+		justify-content: space-between;
+		align-items: flex-start;
+	}
+
+	.keyboard-feature {
+		padding-right: 30px;
+		max-width: 255px;
+	}
+
+	.keyboard-feature > h3 {
+		padding-right: 2rem;
+		height: fit-content;
+	}
+
+	.feature-page > :nth-child(4) {
+		padding-right: 0px;
+	}
+
+	.feature-page > :nth-child(4) > h3 {
+		padding-right: 2rem;
+	}
+}

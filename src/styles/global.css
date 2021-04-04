@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@500;900&display=swap");
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+:root {
+	--orange-1: #f16718;
+	--orange-2: #ff9b62;
+
+	--blue-1: #162542;
+	--blue-2: #7b8bad;
+
+	--grey-1: #e8eff2;
+	--white: #ffff;
+
+	--nav-margin: 24px;
+	--nav-height: 50px;
+}
+
+.wrapper {
+	padding-top: 140px;
+	/* position: fixed; */
+	height: 100%;
+	width: 100%;
+	overflow-x: hidden;
+}
+
+body {
+	font-size: 16px;
+	font-family: "Barlow", sans-serif;
+	/* overflow-x: hidden; */
+	color: #162542;
+}
+
+p {
+	color: var(--blue-2);
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 26px;
+}
+
+/* Fonts */
+
+.header-1 {
+	font-weight: 900;
+	font-size: 3.5rem;
+	line-height: 56px;
+}
+
+.header-2 {
+	font-weight: 900;
+	font-size: 32px;
+	line-height: 36px;
+}
+
+.header-3 {
+	font-weight: 900;
+	font-size: 24px;
+	line-height: 28px;
+}
+
+/* Buttons */
+
+.btn {
+	border-radius: 8px;
+	font-family: "Barlow";
+	font-style: normal;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 26px;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 12px 14px;
+	border: none;
+	cursor: pointer;
+	transition: background 250ms, color 250ms ease-in-out;
+}
+
+.btn-primary {
+	background-color: var(--orange-1);
+	color: var(--white);
+}
+
+.btn-primary:hover {
+	background-color: var(--orange-2);
+}
+
+.btn-secondary {
+	background-color: var(--grey-1);
+	color: var(--blue-1);
+}
+
+.btn-secondary:hover {
+	background-color: var(--blue-1);
+	color: var(--white);
+}
+
+.btn-no-bg {
+	background-color: transparent;
+	color: var(--blue-2);
+}
+
+.btn-no-bg:hover {
+	background-color: var(--grey-1);
+	color: var(--grey-2);
+}
+
+/* Utils */
+
+.img-rounded-corners {
+	border-radius: 20px;
+}
+
+/* Misc */
+
+#copyright {
+	margin-top: 100px;
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 100px;
+	margin-bottom: 50px;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+}
+
+/* Desktop */
+@media (min-width: 1080px) {
+	.wrapper {
+		max-width: 1114px;
+		width: 1114px;
+		margin: 0 auto;
+		overflow-x: visible;
+	}
+
+	.header-1 {
+		font-size: 56px;
+	}
+
+	.btn {
+		padding: 16px 27px;
+	}
+}

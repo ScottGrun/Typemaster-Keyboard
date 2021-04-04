@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png" />
+		<title>Frontend Mentor | Typemaster pre-launch landing page</title>
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+		<link rel="stylesheet" href="./styles/reset.css" />
+		<link rel="stylesheet" href="./styles/global.css" />
+		<link rel="stylesheet" href="./styles/nav.css" />
+		<link rel="stylesheet" href="./styles/landing.css" />
+		<link rel="stylesheet" href="./styles/product.css" />
+		<link rel="stylesheet" href="./styles/features.css" />
+	</head>
+	<body>
+		<!-- Nav -->
+		<header>
+			<nav>
+				<img src="./assets//shared//logo.svg" />
+				<button type="button" class="btn btn-secondary">PRE-ORDER NOW</button>
+			</nav>
+		</header>
+		
+		<main class="wrapper">
+			<!-- Landing Page -->
+			<section class="landing-grid">
+				<div class="landing-page-content" data-aos="fade-up" data-aos-duration="500">
+					<h1 class="header-1">Typemaster Keyboard</h1>
+					<p class="cta-text">Improve your productivity and gaming without breaking the bank. Upgrade to a high quality mechanical typing experience.</p>
+					<div class="btn-container">
+						<button type="button" class="btn btn-primary">PRE-ORDER NOW</button>
+						<button type="button" class="btn btn-no-bg">Release on 5/27</button>
+					</div>
+				</div>
+
+				<picture class="landing-img-container" data-aos="fade-left" data-aos-duration="500">
+					<img id="landing-square" class="square" src="./assets//shared/pattern-square.svg" />
+					<source media="(min-width:1024px)" srcset="./assets/desktop/image-keyboard.jpg" />
+					<source media="(min-width:768px)" srcset="./assets/tablet/image-keyboard.jpg" />
+					<img class="landing-img" src="./assets/mobile/image-keyboard.jpg" alt="Typemaster keyboard image" />
+				</picture>
+			</section>
+
+			<!-- Product Page -->
+			<section class="product-grid">
+				<img id="product-square" class="square" src="./assets//shared/pattern-square.svg" data-aos="fade-right" data-aos-delay="250" />
+				<div class="img-container">
+					<picture class="orange-img" data-aos="fade-right">
+						<source media="(min-width:1024px)" srcset="./assets/desktop/image-phone-and-keyboard.jpg" data-aos-delay="200" data-aos-offset="1500" />
+						<source media="(min-width:768px)" srcset="./assets/tablet/image-phone-and-keyboard.jpg" />
+						<img src="./assets/mobile/image-phone-and-keyboard.jpg" alt="Typemaster keyboard and phone on table" />
+					</picture>
+
+					<picture class="product-img" data-aos="fade-right" data-aos-delay="50">
+						<source media="(min-width:1024px)" srcset="./assets/desktop/image-glass-and-keyboard.jpg" />
+						<source media="(min-width:768px)" srcset="./assets/tablet/image-glass-and-keyboard.jpg" />
+						<img src="./assets/mobile/image-glass-and-keyboard.jpg" alt="Typemaster keyboard viewed from the side" />
+					</picture>
+				</div>
+				<div class="product-text" data-aos="fade-up">
+					<h2 class="header-2 product-header">mechanical wireless Keyboard</h2>
+					<p>The Typemaster keyboard boasts top-notch build and practical design. It offers a wide variety of switches and keycaps, along with reliable wireless connectivity.</p>
+				</div>
+			</section>
+
+			<!-- Feature Page -->
+			<section class="feature-page">
+				<article class="keyboard-feature" data-aos="fade-up" data-aos-delay="50">
+					<div class="icon-container">
+						<img src="./assets/shared/icon-compatible.svg" alt="Monitor icon" />
+					</div>
+					<h3 class="header-3">HIGHLY COMPATIBLE</h3>
+					<p>Easy to use and works well with all major computer brands, gaming consoles and mobile devices. Plug & play, no installation or driver needed.</p>
+				</article>
+
+				<article class="keyboard-feature" data-aos="fade-up" data-aos-delay="100">
+					<div class="icon-container">
+						<img src="./assets/shared/icon-bluetooth.svg" alt="Bluetooth icon" />
+					</div>
+					<h3 class="header-3">WIRELESS WITH BLUETOOTH</h3>
+					<p>Powerful 2.4G RF technology allows you to connect the cordless keyboard from up to 30ft away. Simply plug the unifying receiver into your computer.</p>
+				</article>
+
+				<article class="keyboard-feature" data-aos="fade-up" data-aos-delay="150">
+					<div class="icon-container">
+						<img src="./assets/shared/icon-battery.svg" alt="Battery icon" />
+					</div>
+					<h3 class="header-3">HIGH CAPACITY BATTERY</h3>
+					<p>Equipped with a long-lasting built-in battery, you’ll never have to spend a dime on replaceable ones. Enjoy 40 hours of usage time between charges.</p>
+				</article>
+
+				<article class="keyboard-feature" data-aos="fade-up" data-aos-delay="250">
+					<div class="icon-container">
+						<img src="./assets/shared/icon-light.svg" alt="Lightbulb icon" />
+					</div>
+					<h3 class="header-3">RGB BACKLIT MODES</h3>
+					<p>Choose from 4 backlight brightness levels and adjustable breathing speed. Each key glows intensely in the dark and helps you type in low light conditions.</p>
+				</article>
+				<p id="copyright"><b>Typemaster 2021 </b> | All Rights Reserved</p>
+			</section>
+		</div>
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script>
+			AOS.init();
+		</script>
+	</body>
+</html>
