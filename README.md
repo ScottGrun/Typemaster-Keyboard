@@ -34,7 +34,7 @@ Users should be able to:
 
 ### Links
 
-- [Live Site URL:](https://scottgrun.github.io/Typemaster-Keyboard)
+- [Typemaster Keyboards](https://scottgrun.github.io/Typemaster-Keyboard)
 
 ## My process
 
